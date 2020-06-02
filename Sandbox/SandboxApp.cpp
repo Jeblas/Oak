@@ -15,5 +15,4 @@ public:
 
 Oak::Application* Oak::CreateApplication() {
 	return new Sandbox();
-	//return new Oak::Application();
 }
