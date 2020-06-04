@@ -39,11 +39,14 @@
 
 bin/
 bin-int/
+bin-obj/
 build/
+build-int/
 Build/
 
 # Files
 *.user
+CMakeSettings.json
 
 # Cmake
 cmake-build-*

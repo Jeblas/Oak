@@ -10,6 +10,7 @@ include_directories(../Oak/vendor/spdlog/include)
 #include_directories(../Oak/vendor/stb_image)
 #include_directories(../Oak/vendor/glm)
 
+
 include_directories(../Oak/src)
 #target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/src)
 
@@ -18,7 +19,8 @@ set(SOURCES
         #src/ExampleLayer.h
         #src/Sandbox2D.cpp
         #src/Sandbox2D.h
-        ./SandboxApp.cpp)
+        ./src/SandboxApp.cpp
+        ../Oak/src/Oak.h)
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
