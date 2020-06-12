@@ -35,6 +35,8 @@
       <Filter>Oak</Filter>
     </ClInclude>
     <ClInclude Include="src\oakpch.h" />
+    <ClInclude Include="src\Oak\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Oak\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>Oak</Filter>
     </ClCompile>
     <ClCompile Include="src\oakpch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>
