@@ -22,6 +22,9 @@ project "Oak"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-obj/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "oakpch.h"
+	pchsource "Oak/src/oakpch.cpp"
+
 	files {
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"

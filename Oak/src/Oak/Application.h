@@ -1,5 +1,8 @@
 #pragma once
+
 #include "Core.h"
+#include "Events/Event.h"
+
 namespace Oak {
 	class OAK_API Application {
 		public:
@@ -12,5 +15,3 @@ namespace Oak {
 	// To be defined in client
 	Application* CreateApplication();
 }
-
-
