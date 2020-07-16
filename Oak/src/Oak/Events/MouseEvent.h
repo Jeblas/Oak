@@ -75,7 +75,7 @@ namespace Oak {
 
 		std::string ToString() const override {
 			std::stringstream ss;
-			ss << "MouseButtonReleasedEvent: " << m_button;
+			ss << "MouseButtonReleasedEvent: " << m_Button;
 			return ss.str();
 		}
 
