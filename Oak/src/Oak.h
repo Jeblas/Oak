@@ -3,6 +3,7 @@
 
 
 #include "Oak/Application.h"
+#include "Oak/Layer.h"
 #include "Oak/Log.h"
 
 //-- Entry Point ---------
