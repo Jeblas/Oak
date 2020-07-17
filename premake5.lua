@@ -15,9 +15,12 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Oak/vendor/GLFW/include"
+IncludeDir["Glad"] = "Oak/vendor/Glad/include"
+
 
 -- include GLFW premake file
 include "Oak/vendor/GLFW"
+include "Oak/vendor/Glad"
 
 project "Oak"
     location "Oak"
@@ -40,11 +43,13 @@ project "Oak"
     includedirs {
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include",
-        "%{IncludeDir.GLFW}"
+        "%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}"
     }
 
     links {
         "GLFW",
+        "Glad",
         "opengl32.lib"
     }
 
@@ -52,7 +57,9 @@ project "Oak"
         systemversion "latest"
         defines {
             "OAK_PLATFORM_WINDOWS",
-            "OAK_BUILD_DLL"
+            "OAK_BUILD_DLL",
+            "GLFW_INCLUDE_NONE"
+
         }
         
     postbuildcommands {

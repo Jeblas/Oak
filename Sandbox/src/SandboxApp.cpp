@@ -12,7 +12,6 @@ public:
     void OnEvent(Oak::Event& event) override {
         OAK_TRACE("{0}", event);
     }
-
 };
 
 class Sandbox : public Oak::Application {
@@ -24,8 +23,6 @@ public:
     ~Sandbox() {
 
     }
-
-
 };
 
 Oak::Application* Oak::CreateApplication() {
